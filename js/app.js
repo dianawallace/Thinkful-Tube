@@ -13,16 +13,16 @@ $(function() {
     }
     // shows search results and thumbnail images
     function showResults(data) {
-                console.log(data);
-                
-                $.each(data.items, function(index, video) {
-                    console.log(video);
-                    var videoId = video.id.videoId;
-                    var thumbnails = video.snippet.thumbnails.medium.url;
-                    $('ul').append('<li>' + '<p>' + video.snippet.title + '</p>' +
-                    '<a target="_blank" href="https://www.youtube.com/watch?v=' + videoId + '"><img src= "' + thumbnails +'"/></a></li>');
-                });
-            }
+        console.log(data);
+        
+        $.each(data.items, function(index, video) {
+            console.log(video);
+            var videoId = video.id.videoId;
+            var thumbnails = video.snippet.thumbnails.medium.url;
+            $('ul').append('<li>' + '<p>' + video.snippet.title + '</p>' +
+            '<a target="_blank" href="https://www.youtube.com/watch?v=' + videoId + '"><img src= "' + thumbnails +'"/></a></li>');
+        });
+    }
 
     // use search term   
     //$(function(){

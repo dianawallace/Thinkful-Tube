@@ -3,3 +3,7 @@ body {
     margin-top: 100px;
     text-align: center;
 }
+
+li {
+    display: block;
+}
