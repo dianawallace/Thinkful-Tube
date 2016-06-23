@@ -14,11 +14,13 @@
         <p>Enter a search query below to find your favorite YouTube videos!</p>
     <form id="search-term">
         <div>
-            <input type="text" placeholder="Search YouTube">
-            <input type="submit" value="Submit" class="button" id="query">
+            <input id="query" type="text" placeholder="Search YouTube">
+            <input type="submit" value="Submit" class="button">
         </div>
         <div id="search-results">
-            <ul></ul>
+            <ul>
+                <li id="specificResults"></li>
+            </ul>
         </div>
     </form>
     </div>
